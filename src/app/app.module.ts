@@ -7,8 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule, MatButtonModule } from '@angular/material';
+import { MaterialModule } from './shared/material/material.module';
 
 
 
@@ -23,9 +22,10 @@ import { MatIconModule, MatButtonModule } from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     RecipesModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule
+    MaterialModule
+  ],
+  exports: [
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

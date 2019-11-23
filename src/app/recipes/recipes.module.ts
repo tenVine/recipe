@@ -8,6 +8,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipeNewComponent } from './recipe-new/recipe-new.component';
 import { RecipeStepsComponent } from './recipe-steps/recipe-steps.component';
 import { RecipeStepComponent } from './recipe-steps/recipe-step/recipe-step.component';
+import { MaterialModule } from '../shared/material/material.module';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import { RecipeStepComponent } from './recipe-steps/recipe-step/recipe-step.comp
     RecipeDetailComponent,
     RecipeNewComponent,
     RecipeStepsComponent,
-    RecipeStepComponent
+    RecipeStepComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   exports: [
-    RecipesComponent
+    RecipesComponent,
   ]
 })
 export class RecipesModule { }
