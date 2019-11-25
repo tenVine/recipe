@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+$color-primary: #FF3900;
+$color-secondary: #086CA2;
+$color-additional: #00B454;
+
+.header-nav {
+    padding: 15px 0;
+    box-shadow: 2px 0px 5px rgba(#000, 0.2);
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 24px;
+    color: $color-primary;
+    font-family: 'Pacifico', cursive;
+}
+
+::ng-deep .signin {
+    background-color: $color-secondary;
+    color: #fff;
+    margin: 0 7.5px!important;
+}
+
+::ng-deep .signup {
+    background-color: $color-additional;
+    color: #fff;
+}

@@ -35,6 +35,12 @@ export class RecipesListComponent implements OnInit {
         '50min',
         'Turn your picnic game up to 100 with these sweet – not spicy – Korean Chicken Wings made to pair with Chateau Ste. Michelle. This makes excellent picnic food.',
         'https://images.media-allrecipes.com/userphotos/560x315/6530369.jpg'
+      ),
+      new Recipe (
+        'Peanut Butter Bars I',
+        '1h 25min',
+        'These peanut butter bars taste just like peanut butter cups.',
+        'https://images.media-allrecipes.com/userphotos/720x405/4548869.jpg'
       )
     ]
   }

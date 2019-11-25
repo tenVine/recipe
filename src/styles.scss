@@ -30,3 +30,7 @@ $recipe-theme: mat-light-theme($recipe-primary, $recipe-accent, $recipe-warn);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+    box-sizing: border-box;
+}

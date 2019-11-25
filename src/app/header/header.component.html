@@ -1,5 +1,25 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+<div class="header-nav">
+  <div class="wrapper">
+    <div class="row middle-xs">
+      <div class="col-xs-2">
+        <a href="#" class="logo">Recipes</a>
+      </div>
+      <div class="col-xs-2">
+        <button mat-button [matMenuTriggerFor]="menu">Browse</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+      </div>
+      <div class="col-xs-4">
+        <app-search></app-search>
+      </div>
+      <div class="col-xs-4 end-xs">
+          <button class="signin" mat-button>Sing in</button>
+          <button class="signup" mat-button>Sing up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

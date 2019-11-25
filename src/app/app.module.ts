@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { MaterialModule } from './shared/material/material.module';
+import { SearchComponent } from './header/search/search.component';
 
 
 
@@ -16,7 +17,8 @@ import { MaterialModule } from './shared/material/material.module';
     AppComponent,
     HeaderComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
