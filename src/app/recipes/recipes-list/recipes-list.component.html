@@ -1,17 +1,7 @@
 <div class="wrapper">
     <div class="row">
-        <div class="col-xs-4 mb-5" *ngFor="let recipe of recipes">
-            <!-- <app-recipes-list-item></app-recipes-list-item> -->      
-            <mat-card class="recipe-card">
-                <img mat-card-image src="{{recipe.imageUrl}}" alt="Photo of a Shiba Inu">
-                <mat-card-content>
-                    <mat-card-title>{{recipe.title}}</mat-card-title>
-                    <mat-card-subtitle>Ready in: {{recipe.timeCook}}</mat-card-subtitle>
-                    <p>
-                        {{ recipe.desc }}
-                    </p>
-                </mat-card-content>
-            </mat-card>
+        <div class="col-xs-4 mb-5" *ngFor="let r of recipes">
+            <app-recipes-list-item [recipe] = "r"></app-recipes-list-item>      
         </div>
     </div>
 </div>
