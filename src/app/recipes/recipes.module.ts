@@ -9,6 +9,7 @@ import { RecipeNewComponent } from './recipe-new/recipe-new.component';
 import { RecipeStepsComponent } from './recipe-steps/recipe-steps.component';
 import { RecipeStepComponent } from './recipe-steps/recipe-step/recipe-step.component';
 import { MaterialModule } from '../shared/material/material.module';
+import { RefreshComponent } from './recipes-list/refresh/refresh.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MaterialModule } from '../shared/material/material.module';
     RecipeNewComponent,
     RecipeStepsComponent,
     RecipeStepComponent,
+    RefreshComponent,
   ],
   imports: [
     CommonModule,

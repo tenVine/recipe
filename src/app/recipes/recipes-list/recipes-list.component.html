@@ -1,4 +1,7 @@
 <div class="wrapper">
+    <div class="row center-xs">
+        <app-refresh (switchNew)='onSwitchChange($event)'></app-refresh>
+    </div>
     <div class="row">
         <div class="col-xs-4 mb-5" *ngFor="let r of recipes">
             <app-recipes-list-item [recipe] = "r"></app-recipes-list-item>      

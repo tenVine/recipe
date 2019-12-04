@@ -1,0 +1,15 @@
+button {
+    background: #FF3900;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.6s;
+    &:hover {
+        background: darken(#FF3900, 6);
+    }
+}

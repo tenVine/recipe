@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Recipe } from '../../shared/models/recipe.model';
 
 @Component({
@@ -7,11 +7,15 @@ import { Recipe } from '../../shared/models/recipe.model';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent implements OnInit {
-  recipes: Recipe[] = []
+  recipes: object;
+  recipes2: Recipe[] = [];
+  recipes3: Recipe[] = [];
+  
+
   constructor() { }
 
   ngOnInit() {
-    this.recipes = [
+    this.recipes2 = [
       new Recipe (
         'Carrot Maple Dip',
         '40min',
@@ -42,7 +46,27 @@ export class RecipesListComponent implements OnInit {
         'These peanut butter bars taste just like peanut butter cups.',
         'https://images.media-allrecipes.com/userphotos/720x405/4548869.jpg'
       )
-    ]
+    ];
+    this.recipes3 = [
+      new Recipe (
+        'The Best Vegetarian Chili in the World',
+        '1h 15min',
+        'Break out your soup pot and fix up a batch of this delicious, spicy vegetarian chili today! Its ready in no time, and packed with vegetables, beans - and flavor!',
+        'https://images.media-allrecipes.com/userphotos/720x405/4565674.jpg'
+      ),
+      new Recipe (
+        'Grilled Tuscan Rib Steak',
+        '30min',
+        'What makes a steak Tuscan? Its accent! Really, the secrets in the spices… but speaking in an Italian accent is strongly encouraged, too.',
+        'https://images.media-allrecipes.com/userphotos/720x405/7183004.jpg'
+      )
+    ];
+    this.recipes = this.recipes2;
   }
+
+  onSwitchChange(switchTo: boolean) {
+    switchTo == true ? this.recipes = this.recipes2 : this.recipes = this.recipes3;
+  }
+  
 
 }
