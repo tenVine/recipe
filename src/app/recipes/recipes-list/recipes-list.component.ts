@@ -7,7 +7,7 @@ import { Recipe } from '../../shared/models/recipe.model';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent implements OnInit {
-  recipes: object;
+  recipes: Recipe[] = [];
   recipes2: Recipe[] = [];
   recipes3: Recipe[] = [];
   
@@ -65,7 +65,7 @@ export class RecipesListComponent implements OnInit {
   }
 
   onSwitchChange(switchTo: boolean) {
-    switchTo == true ? this.recipes = this.recipes2 : this.recipes = this.recipes3;
+    switchTo ? this.recipes = this.recipes2 : this.recipes = this.recipes3;
   }
   
 
