@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="col-xs-4 mb-5" *ngFor="let r of recipes">
-            <app-recipes-list-item [recipe] = "r"></app-recipes-list-item>      
+            <app-recipes-list-item [recipe] = "r" (click)="loadDetails(r)"></app-recipes-list-item>      
         </div>
     </div>
 </div>

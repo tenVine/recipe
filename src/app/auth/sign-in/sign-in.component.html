@@ -1,13 +1,17 @@
-<div class="subheader">
+<div class="subheader center-xs">
     <h3>Sign in with email</h3>
 </div>
-<form action="" id="signup">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <label for="">
-        <input type="checkbox">
-        Remember me
-    </label>
+<form action="" id="signin" name="sign-in">
+    <mat-form-field>
+        <input name="email" matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input name="password" type="password" matInput placeholder="Password">
+    </mat-form-field>
+    <mat-checkbox name="remember" class="example-margin" [(ngModel)]="checked">Remember me&ensp;</mat-checkbox>
     <a href="#">Forgot password?</a>
-    <input type="submit" id="submitRegForm" data-action="submit" data-role="none" value="Sign in" class="">
+    <div class="button-wrap">
+        <button type="submit" mat-raised-button color="primary">Sign in</button>
+    </div>
 </form>

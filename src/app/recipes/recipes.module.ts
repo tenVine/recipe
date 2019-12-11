@@ -10,6 +10,7 @@ import { RecipeStepsComponent } from './recipe-steps/recipe-steps.component';
 import { RecipeStepComponent } from './recipe-steps/recipe-step/recipe-step.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { RefreshComponent } from './recipes-list/refresh/refresh.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RefreshComponent } from './recipes-list/refresh/refresh.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   exports: [
     RecipesComponent,

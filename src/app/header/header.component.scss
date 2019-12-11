@@ -6,6 +6,7 @@ $color-additional: #00B454;
 .header-nav {
     padding: 15px 0;
     box-shadow: 2px 0px 5px rgba(#000, 0.2);
+    
 }
 
 .logo {
@@ -15,13 +16,16 @@ $color-additional: #00B454;
     font-family: 'Pacifico', cursive;
 }
 
-::ng-deep .signin {
-    background-color: $color-secondary;
-    color: #fff;
-    margin: 0 7.5px!important;
-}
-
-::ng-deep .signup {
-    background-color: $color-additional;
-    color: #fff;
+.menu {
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #000;
+        border-radius: 4px;
+        &.active {
+            background-color: $color-primary;
+            color: #fff;
+        }
+    }
 }

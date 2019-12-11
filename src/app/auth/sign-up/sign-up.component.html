@@ -1,10 +1,19 @@
-<div class="subheader">
+<div class="subheader center-xs">
     <h3>Sign up with email</h3>
     <a href="#">Already a member? Sign in!</a>
 </div>
 <form action="" id="signup">
-    <input type="text" placeholder="Display name(what others see)">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <input type="submit" id="submitRegForm" data-action="submit" data-role="none" value="Create my account" class="">
+    <mat-form-field>
+            <input name="name" type="text" matInput placeholder="Display name(what others see)">
+        </mat-form-field>
+    <mat-form-field>
+        <input name="email" matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input name="password" type="password" matInput placeholder="Password">
+    </mat-form-field>
+    <div class="button-wrap">
+        <button type="submit" mat-raised-button color="primary">Register now</button>
+    </div>
 </form>
